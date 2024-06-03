@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(51, 116, 100);
+            color: white;
+        }
+        nav{
+            background-color: rgb(39, 92, 79);
+            height: 100px;
+            width: 100%;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        #browser{
+            color:white;
+            width: 300px;
+            height: 40px;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        #buscador{
+            width: fit-content;
+            height: 40px;
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        #for{
+            background-color: rgb(39, 92, 79);
+            top: -15px;
+            left: 15px;
+            padding: 5px;
+            position: absolute;
+        }
+        #def{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+        }
+
+        #boton{
+            color: white;
+            background-color: transparent;
+            height: 100%;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        #boton:valid{
+            background-color: red;
+        }
+    </style>
+    <nav>
+        <div id="buscador">
+            <input type="" name="browser" id="browser">
+            <label id="for" for="browser">Buscador</label>
+            <input id="boton" type="button" value="Buscar">
+        </div>
+        
+    </nav>
+    <main id="body">
+
+    </main>
+    <script src="./palabras/def.js"></script>
+</body>
+</html>
